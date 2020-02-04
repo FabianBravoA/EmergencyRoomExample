@@ -1,0 +1,196 @@
+body {
+  background-color: gold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: indigo;
+  font-size: 3em;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+}
+
+.date {
+  position: absolute;
+  right: 70px;
+  color: indigo;
+  font-size: 10em;
+  top: 0px;
+  margin: 32px;
+}
+
+.boxWrapper {
+  width: 180px;
+  height: 180px;
+  margin-left: 4px;
+}
+
+.box {
+  border-radius: 8px;
+  background-color: indigo;
+  width: 180px;
+  height: 180px;
+  display: block;
+  position: absolute;
+}
+
+.box h3 {
+  font-size: 2em;
+  color: white;
+  margin: 8px;
+}
+
+.box h4 {
+  font-size: 1.5em;
+  color: white;
+  margin: 8px;
+}
+
+.boxActionButton {
+  font-size: 1.5em;
+  color: white;
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+}
+
+.status {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0px;
+  color: white;
+}
+
+.status p {
+  margin: 4px;
+  font-weight: 800;
+}
+
+.emergency_level_empty {
+  background-color: darkseagreen;
+}
+
+.emergency_level_1 {
+  background-color: red;
+}
+
+.emergency_level_2 {
+  background-color: goldenrod;
+}
+
+.emergency_level_3 {
+  background-color: goldenrod;
+}
+
+.emergency_level_4 {
+  background-color: mediumseagreen;
+  
+}
+
+.emergency_level_5 {
+  background-color: mediumseagreen;
+}
+
+.queuedItem {
+  background-color: indigo;
+  color: white;
+  width: 900px;
+  height: 50px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.patientName {
+  position: relative;
+  display: inline-block;
+  font-weight: 900;
+  font-size: x-large;
+  height: 40px;
+  vertical-align: middle;
+  padding-left: 8px;
+  bottom: 8px;
+}
+
+.patientStatus {
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  top: 0px;
+  height: 100%;
+  float: right;
+  font-weight: 700;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.patientStatus p {
+  padding-top: 4px;
+  margin-top: 0px;
+  height: 8px;
+}
+
+.admission {
+  position: absolute;
+  background-color: indigo;
+  width: 400px;
+  right: 16px;
+  bottom: 0px;
+}
+
+.admission input, select, textarea {
+  width: 80%;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 8px;
+  height: 36px;
+}
+
+.admission p {
+  font-weight: 700;
+  margin-left: 16px;
+  color: white;
+}
+
+.toggleButtonTitle {
+  font-weight: 800;
+  font-size: larger;
+}
+
+.toggleButtonIcon {
+  color: white;
+  position: absolute;
+  right: 0px;
+  font-size: 1.5em;
+  top: 16px;
+  margin-right: 16px;
+}
+
+.open {
+  display: block;
+}
+
+.closed {
+  display: none;
+}
+
+.flatButton {
+  color: white;
+  font-size: large;
+  font-weight: 800;
+  border: none;
+  background-color: transparent;
+}
+
+.admissionFormButton {
+  position: relative;
+  float: right;
+  bottom: 8px;
+}

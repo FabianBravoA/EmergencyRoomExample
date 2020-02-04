@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LabSalud - Sala de Emergencias</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="https://kit.fontawesome.com/e3725b41e9.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="boxes" class="boxes"></div>
+    <div id="date" class="date">10:00</div>
+    <h2>Esperando atención : </h2>
+    <div id="queue" class="queue"></div>
+    <div id="admission" class="admission">
+      <div id="toggleShowAdmission" class="toggleButton">
+        <p class="toggleButtonTitle">Ingresar paciente</p>
+        <i id="toggleAdmissionButton" class="fas fa-arrow-down toggleButtonIcon"></i>
+      </div>
+       <div id="admissionForm" class="open">
+        <p>Nombre del paciente</p>
+        <input id="name" type="text" />
+        <p>Edad</p>
+        <input id="age" type="number" />
+        <p>Nivel de emergencia</p>
+        <select id="emergencyLevel">
+          <option value="1">
+            ESI 1 - Grave
+          </option>
+          <option value="2">
+            ESI 2 - Mediana Gravedad
+          </option>
+          <option value="3">
+            ESI 3 - Menos Grave
+          </option>
+          <option value="4">
+            ESI 4 - Leve
+          </option>
+          <option value="5">
+            ESI 5 - Atención General
+          </option>
+        </select>
+        <p>Descripción</p>
+        <textarea id="description" type="text" rows="3"></textarea>
+        <button id="admissionEnterButton" class="flatButton admissionFormButton">
+          Ingresar
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
